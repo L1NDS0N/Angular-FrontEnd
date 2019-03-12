@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title> </title>
+</head>
+<body>
+  <form action="" method="post">
+    <label for="cor">Escolha a cor</label><br>
+    <input type="color" name="cor" id="cor" value="Cor"><br>
+    <label for="nascimento">Data de Nascimento</label><br>
+    <input type="date" name="Nascimento" id="Nascimento" value="04/09/1996" placeholder="04/09/1996">
+    <hr>
+    <label for="evento">Data e Hora do evento</label>
+    <input type="datetime-local" name="evento" id="evento" value="evento">
+    <hr>
+    <label for="mes">Mês do evento</label>
+    <input type="month" name="mes"  id="mes">
+    <hr>
+    <label for="email">Insira seu email</label>
+    <input type="email" name="email" id="email" placeholder="e-mail@domain.com">
+    <hr>
+    <label for="quantidade">Quantidade</label>
+    <input type="number" name="quantidade" value="quantidade" id="quantidade" min="0" value="10" step="10" placeholder="Diga logo rapaz">
+    <hr>
+    <label for="avaliacao">Avaliação do Site:</label>
+    <input type="range" name="avaliacao" value="avaliacao" id="Avaliacao" min="0" max="100">
+    <hr>
+    <label for="buscar">Pesquisar</label>
+    <input type="search" name="buscar" value="" placeholder="Insira um dado para buscar" id="buscar">
+    <hr>
+    <label for="tel">Telefone</label>
+    <input type="tel" name="Telefone" id="tel"   pattern="[0-9]{3}-[0-9]{9}" placeholder="Example: 084-900019001" data-mask-selectonfocus="true" data-mask="(00)00000-0000">
+
+
+    <input type="week" name="semana" value="semana" id="semana">
+    <input type="url" name="url">
+    <br><br> <button type="submit" name="Cadastrar">Confirmar</button>
+  </form>
+</body>
+</html>

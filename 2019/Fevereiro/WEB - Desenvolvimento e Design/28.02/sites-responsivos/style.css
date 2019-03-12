@@ -1,0 +1,79 @@
+/* @charset "UTF-8"; */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+div.conteudo {
+
+  display: inline-block;
+}
+
+
+header#cabecalho {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  /* background-attachment: fixed; */
+  background-position: 50px 20px;
+  background-color: rgba(49, 79, 138, 0.85);
+  box-shadow: 2px 2px 3px grey;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+header#cabecalho div.fundo {
+  position: relative;
+  z-index: -1;
+
+}
+header#cabecalho div.sobrep {
+  position: absolute;
+  z-index: -1;
+  margin: 50px 20px;
+}
+
+nav{
+  margin-top: 150px;
+  width: 100%;
+  /* background-color: white; */
+  /* float: left; */
+}
+nav p{
+  display: inline;
+  margin-left: 20px;
+  width: 130px;
+  transition: .7s;
+  padding: 5px;
+  text-shadow: .5px 0px grey;
+}
+nav.menu p:hover{
+  background-color: rgba(0, 0, 0, 0.81);
+  color: rgba(255, 255, 255, 0.7);
+  /* background-blend-mode: lighten; */
+}
+
+section#corpo {
+  margin-top: 200px;
+  margin-left: 30px;
+  margin-right: 100px;
+
+}
+section p {
+  text-indent: 10px;
+}
+
+/* Tratando de textos  */
+num.num{
+  color: rgba(49, 79, 138, 0.85);
+  text-shadow: 1px 0px grey;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(49, 79, 138, 0.85);
+  text-shadow: 1px 0px grey;
+  font-style: italic;
+}

@@ -1,0 +1,90 @@
+/* Formatação do header main */
+header#main{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.53);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.79);
+  border-radius: 10px;
+  width: 103%;
+  height: 300px;
+  margin: -20px;
+}
+
+header#main p{
+  display: inline-block;
+  transition: .7s;
+  border-radius: 3px;
+  width: 100px;
+  padding: 12px 0px 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+header#main p:hover {
+  background-color: rgba(0, 0, 0, 0.74);
+  color: white;
+  margin-left: 12px;
+  border-top-left-radius: 15px 15px;
+}
+header#main a{
+  text-decoration: none;
+  text-shadow: .2px 0px; rgba(0, 0, 0, 0.83);
+  color: rgba(0, 0, 0, 0.91);
+}
+
+#main p.login:hover {
+  background-color: rgba(233, 29, 29, 0.79);
+  margin-left: 20px;
+}
+
+
+
+/* Formatação do Div das disciplinas */
+
+div#disciplinas{
+  border-radius: 10px;
+  width: 103%;
+  padding-top: 266px;
+  margin-left: -20px;
+  text-indent: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+div#disciplinas p {
+  display: flex;
+  transition: 2s;
+  border-radius: 1.2px;
+  width: 200px;
+  padding: 12px 0px 10px 0px;
+
+  text-transform: uppercase;
+  box-shadow: .5px .5px 0px .3px rgba(0, 0, 0, 0.83);
+  text-shadow: .2px 0px; rgba(0, 0, 0, 0.83);
+  color: rgba(0, 0, 0, 0.91);
+
+}
+
+div#disciplinas p.a:hover {
+  background-color: rgba(0, 0, 0, 0.53);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.79);
+  border-bottom-right-radius: 100px 60px;
+  color: white;
+  width: 101%;
+}
+div#disciplinas p.b:hover {
+  background-color: rgba(0, 0, 0, 0.53);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.79);
+  border-bottom-right-radius: 100px 60px;
+  color: white;
+  width: 101%;
+}
+div#disciplinas p.c:hover {
+  background-color: rgba(0, 0, 0, 0.53);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.79);
+  border-bottom-right-radius: 100px 60px;
+  color: white;
+  width: 101%;
+
+  /* border-top: 5px solid  rgba(0, 0, 0, 0.12); */
+}

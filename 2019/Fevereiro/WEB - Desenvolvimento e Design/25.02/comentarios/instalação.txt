@@ -1,0 +1,14 @@
+editar o arquivo :
+
+config.php
+
+e cria um banco de dados com o nome comentarios...
+e jogue todos os arquivo no diretorio do seu site
+
+
+=)
+
+
+www.artegraficas.kit.net
+thiago_galatti@hotmail.com
+artesgraficas_wd@hotmail.com

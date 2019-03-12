@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@font-face {
+  font-family: 'FonteLogo';
+  src: url("./projeto-glass-html5/_fonts/computer-font.ttf");
+}
+body {
+  background-color: #e7faf3;
+  color: rgba(0, 0, 0, 1);
+}
+
+div#interface {
+  width: 1000px;
+  background-color: white;
+  margin: -20px auto 0px auto;
+  box-shadow: 0px 0px 10px grey;
+  padding: 10px;
+}
+
+p {
+  text-align: justify;
+  text-indent: 50px;
+}
+
+header#cabecalho h1{
+  font-family: Arial, sans-serif;
+  font-size: 30pt;
+  color: #606060;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15pt;
+  color: #888888;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  padding: 0px;
+  margin-top: 0px;
+}
+
+header#cabecalho img#icone {
+  position: absolute;
+  left: 800px;
+  top: 70px;
+}
+
+
+header#cabecalho {
+  border-bottom: 1px #e7faf3 solid;
+  height: 150px;
+  background: url('projeto-glass-html5/_imagens/glass-logo-peq.jpg') no-repeat 0px 90px;
+}
+
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda {
+  border: 8px solid white;
+  box-shadow: 1px 1px 4px black;
+  position: relative;
+}
+
+figure.foto-legenda img {
+  width: 100%;
+  height: 100%;
+}
+
+figure.foto-legenda figcaption {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0,0,0,.3);
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: opacity .7s;
+}
+figure.foto-legenda:hover figcaption{
+  opacity: 1;
+}
+
+
+/* Formatação do Menu  */
+nav#menu{
+  display: block;
+}
+
+nav#menu ul {
+  list-style: none;
+  text-transform: uppercase;
+  position: absolute;
+  top: -20px;
+  left: 300px;
+}
+nav#menu li {
+  display: inline-block;
+  background-color: #67d49f;
+  padding: 10px;
+  margin: 2px;
+  transition: .6s;
+}
+nav#menu li:hover {
+  background-color: #53ad82;
+}
+
+nav#menu h1{
+  display: none;
+}
+
+nav#menu a {
+  color: black;
+  text-shadow: 1px 1px rgba(0,0,0,.2);
+  text-decoration: none;
+  transition-duration: 2s;
+  transition
+}
+
+nav#menu a:hover {
+  color: white;
+  text-shadow: 1px 2px grey;
+}
+
+section#corpo{
+  display: block;
+  width: 520px;
+  float: left;
+  border-right: 1px solid #e7faf3;
+  padding-right: 15px;
+}
+aside#lateral{
+  float: right;
+  display: block;
+  width: 450px;
+
+}
+footer#rodape{
+  clear: both;
+  border-top: 1px solid #e7faf3;
+}
+footer#rodape p {
+  text-align: center;
+}
