@@ -16,7 +16,8 @@ let n3 = parseFloat(prompt("Digite a terceira nota"));
 
 let media = (n1 + n2 + n3)/3;
 
-if(media == null){
+
+if(isNaN(n1) || isNaN(n2) || isNaN(n3)){
   alert("você não digitou certo abestado!");
   let n1 = parseFloat(prompt("Digite a primeira nota"));
   let n2 = parseFloat(prompt("Digite a segunda nota"));

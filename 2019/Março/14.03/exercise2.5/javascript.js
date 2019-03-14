@@ -11,7 +11,7 @@ alert("Em um ano você gastará R$"+result*365+" com cigarros");
 
 let resp = confirm("Então brother, pare de fumar, certo?");
 if (resp == 1) {
-alert("Parabéns você, será mais saudável e terá mais dinheiro no bolso");
+alert("Parabéns você, será mais saudável e terá mais dinheiro no bolso.");
 } else {
 alert("Isso foi só um 'alerta', mas você deveria parar!");
 }
