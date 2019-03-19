@@ -2,7 +2,7 @@
 // ou V-Vespertino ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou
 // "Boa Noite!" ou "Valor Inválido!", conforme o caso
 alert("Qual o turno?")
-let turno = prompt("Insira em que turno você estuda:")
+let turno = prompt("Insira em que turno você estuda:").toLowerCase()
 switch (turno) {
   case "m":
   alert("Bom dia!")
@@ -10,7 +10,7 @@ switch (turno) {
   case "v":
   alert("Boa tarde!")
   break;
-  case "n": case "noturno".toLocaleLowerCase():
+  case "n": case "noturno":
   alert("Boa noite!")
   break;
   default:
