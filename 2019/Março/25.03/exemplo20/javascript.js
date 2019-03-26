@@ -1,4 +1,4 @@
-function qtd-linhas(){
+function qtd_linhas(){
   let funcionarios = document.getElementById("tabela-funcionarios")
   let qtd = funcionarios.getElementsByTagName("tr").length;
 }
@@ -17,7 +17,9 @@ function insert() {
     sexo = "Feminino"
   }
   insert_table(nome, sexo, idade);
+  limpar_formulario();
 }
 function insert_table(nome, sexo, idade){
-
+  let table = document.getElementById("tabela-funcionarios");
+  let row = table.insertRow();
 }
