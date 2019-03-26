@@ -22,4 +22,11 @@ function insert() {
 function insert_table(nome, sexo, idade){
   let table = document.getElementById("tabela-funcionarios");
   let row = table.insertRow();
+  let td_nome = row.insertCell(0);
+  let td_sexo = row.insertCell(1);
+  let td_idade = row.insertCell(2);
+
+  td_nome.innerHTML = nome;
+  td_sexo.innerHTML = sexo;
+  td_idade.innerHTML = idade;
 }
