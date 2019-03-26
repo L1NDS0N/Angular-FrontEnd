@@ -1,22 +1,23 @@
-function testar() {
-  let nome = document.getElementById("nome")
-  let resultado = document.getElementById("resultado")
-  resultado.innerHTML = nome.value;
-  limpar();
+function qtd-linhas(){
+  let funcionarios = document.getElementById("tabela-funcionarios")
+  let qtd = funcionarios.getElementsByTagName("tr").length;
 }
-
-function limpar() {
-  let nome = document.getElementById("nome")
-  nome.value = "";
-  nome.focus();
+function limpar_formulario(){
+  // TODO:
 }
 
 function insert() {
-  var nome = document.getElementById("nome");
-  var sexo = document.getElementById("sexo");
-  var idade = document.getElementById("idade");
-  alert(nome.value);
-  document.getElementById(estranho).value = "BUG";
-  alert(idade.value);
+  let nome = document.getElementById("nome").value;
+  // let sexo = document.getElementById("sexo").value;
+  let idade = document.getElementById("idade").value;
+  let sexo = "a definir";
+  if(document.getElementById("masculino").checked){
+    sexo = "Masculino";
+  }else{
+    sexo = "Feminino"
+  }
+  insert_table(nome, sexo, idade);
+}
+function insert_table(nome, sexo, idade){
 
 }
