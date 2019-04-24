@@ -1,6 +1,11 @@
-function imprimiIdade(pessoa){
-  console.log(pesoa.idade)
+interface Pessoa {
+  idade: number;
+  sexo?: string;
 }
 
-let joaoMarcos= {nome: 'João Marcos', idade: 22};
+function imprimiIdade(pessoa: Pessoa) {
+  console.log(pessoa.idade);
+}
+
+let joaoMarcos = { nome: 'João Marcos', idade: 22 };
 imprimiIdade(joaoMarcos);

@@ -2,7 +2,7 @@ class Cliente {
 
   nome: string;
   idade: number;
-  sexo: boolean;
+  sexo?: boolean;
 
   constructor(nome: string, idade:number, sexo: boolean){
     this.nome = nome;
