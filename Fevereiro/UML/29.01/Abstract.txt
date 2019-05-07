@@ -1,0 +1,11 @@
+Professor= Nome, matrícula;
+
+Classes=Horários, datas, professor, disciplina, atividade - order by, turno, dia da semana, data, período ou ano; 
+
+Extracurrilulares= nome(laboratório, auditório), horários, datas, capacidade;
+
+
+
+
+
+
