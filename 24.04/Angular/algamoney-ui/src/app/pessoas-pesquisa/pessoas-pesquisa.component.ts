@@ -51,11 +51,11 @@ export class PessoasPesquisaComponent {
       nome: 'Academia Top'
     }
   ];
-
-  checkstatus(){
-    if(this.pessoas.values.status == true){
-      let checkedstatus: string = "Ativo";
-    }
-     checkedstatus: string = "Inativo";
-  }
+  
+  // checkstatus(){
+  //   if(this.pessoas.values.status == true){
+  //     let checkedstatus: string = "Ativo";
+  //   }
+  //    checkedstatus: string = "Inativo";
+  // }
 }

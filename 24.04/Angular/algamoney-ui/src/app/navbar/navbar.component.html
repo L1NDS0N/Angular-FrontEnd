@@ -2,14 +2,22 @@
   <div class="container">
     <div class="ui-g">
       <div class="ui-g-12">
+        <a href="#"class=""><i class="fas fa-search fa-2x"></i></a>
         <a href="#" class="navbar-toggle" (click)="exibindoMenu=!exibindoMenu">
-          <i class="fas fa-bars fa-2x"></i>
+          <i class="fas fa-bars fa-2x navbar-button"></i>
         </a>
       </div>
     </div>
   </div>
 
-
+  <!-- <p-inplace>
+    <span pInplaceDisplay>
+      Click to Edit
+    </span>
+    <span pInplaceContent>
+      <input type="text" value="PrimeNG" pInputText>
+    </span>
+  </p-inplace> -->
 
   <ul class="navbar-menu" [hidden]="!exibindoMenu">
     <a href="#" class="navbar-menu-close" (click)="exibindoMenu=!exibindoMenu">
@@ -19,5 +27,5 @@
     <li class="navbar-menuitem"><a href="#">Lançamentos</a></li>
     <li class="navbar-menuitem"><a href="#">Pessoas</a></li>
     <li class="navbar-menuitem"><a href="#">Logout</a></li>
-</ul>
+  </ul>
 </nav>
