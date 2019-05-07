@@ -36,11 +36,11 @@
         </ng-template>
       </p-column>
       <p-column field="dataVencimento" header="Vencimento" styleClass="col-data">
-        <ng-template let-lanc="rowData" pTemplate="body"><span>{{lanc.dataVencimento}}</span>
+        <ng-template let-lanc="rowData" pTemplate="body"><span>{{lanc.dataVencimento | date: 'dd/MM/yyyy'}}</span>
         </ng-template>
       </p-column>
       <p-column field="dataPagamento" header="Pagamento" styleClass="col-data">
-        <ng-template let-lanc="rowData" pTemplate="body"><span>{{lanc.dataPagamento}}</span>
+        <ng-template let-lanc="rowData" pTemplate="body"><span>{{lanc.dataPagamento | date: 'dd/MM/yyyy'}}</span>
         </ng-template>
       </p-column>
       <p-column field="valor" header="Valor" styleClass="col-valor">

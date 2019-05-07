@@ -40,18 +40,20 @@
       <p-column field="status" header="Status" styleClass="col-status">
         <ng-template let-lanc="rowData" pTemplate="body">
           <span class="check-status">
-          <a href="#" [pTooltip]="lanc.status ? 'Desativar' : 'Ativar'" tooltipPosition="top">
+            <a href="javascript:;" [pTooltip]="lanc.status ? 'Desativar' : 'Ativar'" tooltipPosition="top">
               {{ lanc.status ? 'Ativo' : 'Inativo' }}</a></span>
-        </ng-template>
-      </p-column>
+            </ng-template>
+          </p-column>
 
-      <p-column styleClass="col-acoes">
-        <ng-template pTemplate="body">
-          <button pButton icon="fa-edit" pTooltip="Editar" tooltipPosition="top"></button>
-          <button pButton icon="fa-trash-alt" pTooltip="Excluir" tooltipPosition="top">
-          </button>
-        </ng-template>
-      </p-column>
-    </p-dataTable>
-  </div>
-</div>
+          <p-column styleClass="col-acoes">
+            <ng-template pTemplate="body">
+              <button pButton icon="fa-edit" pTooltip="Editar" tooltipPosition="top"></button>
+              <button pButton icon="fa-trash-alt" pTooltip="Excluir" tooltipPosition="top"></button>
+            </ng-template>
+          </p-column>
+        </p-dataTable>
+        <div class="ui-g-12">
+          <a pButton label="Nova Pessoa"></a>
+        </div>
+      </div>
+    </div>
