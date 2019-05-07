@@ -1,0 +1,18 @@
+<div class="card" [ngStyle]="getEstilosCartao()">
+    <img class="card-img-top" [ngStyle]="{'width': '100%', 'heigth': '100%'}" src="https://cdn.ahnegao.com.br/2019/04/img-{{filme.id}}.jpg">
+    <div class="card-block"><span class="badge" [ngClass]="{ 'badge-danger': isAdmin(), 'badge-primary': !isAdmin() }">
+        {{filme.titulo}}</span>
+        {{filme.descricao}}
+    </div>
+</div>
+<div class="container">
+  <div class="row">
+
+  <ul>
+    <li *ngFor="let filmeDisponivel of filmesDisponiveis">
+      {{filmeDisponivel}}
+    </li>
+  </ul>
+
+</div>
+</div>

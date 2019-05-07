@@ -1,0 +1,20 @@
+<div class="col-6">
+<div class="alert alert-success" role="alert" *ngIf="adicionado">
+    Filme adicionado: <strong>{{titulo}}</strong><br>
+    {{descricao}}
+</div>
+
+<div class="form-group">
+    <label for="titulo">Titulo</label>
+    <input type="text" class="form-control" [(ngModel)]="titulo"
+        (focus)="adicionado = false">
+
+    <label for="descricao">Descrição</label>
+        <input type="text" class="form-control" [(ngModel)]="descricao"
+            (focus)="adicionado = false">
+</div>
+
+
+<button type="button" class="btn btn-primary"
+    (click)="adicionar()" [disabled]="titulo.length == 0">Adicionar</button>
+</div>

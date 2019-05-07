@@ -1,0 +1,12 @@
+.check-status {
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.check-status a {
+  text-decoration: none;
+}
+
+.check-status a:hover {
+  color: #c0bbb7;
+}

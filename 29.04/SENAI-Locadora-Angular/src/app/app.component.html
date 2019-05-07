@@ -1,0 +1,12 @@
+<div class="container">
+    <app-filme-form (criado)="aoAdicionar($event)"></app-filme-form>
+
+    <div class="row" style="margin-top: 20px">
+        
+        <div class="col-2" *ngFor="let f of filmes">
+            <app-filme-card [filme]="f"></app-filme-card>
+        </div>
+
+    </div>
+
+</div>
