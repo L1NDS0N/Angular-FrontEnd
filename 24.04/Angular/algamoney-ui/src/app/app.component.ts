@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {InplaceModule} from 'primeng/primeng';
+// import {InplaceModule} from 'primeng/primeng';
+
 
 @Component({
   selector: 'app-root',

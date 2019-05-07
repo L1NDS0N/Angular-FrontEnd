@@ -39,7 +39,9 @@
 
       <p-column field="status" header="Status" styleClass="col-status">
         <ng-template let-lanc="rowData" pTemplate="body">
-          <span class="check-status"> <a href="#">{{lanc.status }}</a></span>
+          <span class="check-status">
+          <a href="#" [pTooltip]="lanc.status ? 'Desativar' : 'Ativar'" tooltipPosition="top">
+              {{ lanc.status ? 'Ativo' : 'Inativo' }}</a></span>
         </ng-template>
       </p-column>
 
