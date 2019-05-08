@@ -1,0 +1,94 @@
+<div class="container">
+
+  <!-- {{ cliente | json}} <br>
+  {{ usuarioForm.valid }} -->
+
+  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+    Tooltip on top
+  </button>
+  <div *ngIf="usuarioForm.invalid && usuarioForm.dirty" class="alert alert-danger">
+    Preencha todos os campos corretamente!
+  </div>
+
+  <form autocomplete="off" #usuarioForm="ngForm" (ngSubmit)="salvar(usuarioForm)">
+    <div class="form-group" [class.has-danger]="nome.invalid && nome.touched">
+      <label for="form-control-label">Nome</label>
+      <input type="text" class="form-control" name="nome" minlength="5" required #Nome="ngModel" [(ngModel)]="cliente.nome">
+
+      <div *ngIf="Nome.hasError('required') && Nome.touched" class="form-control-feedback">
+        Informe um nome válido!
+      </div>
+      <div *ngIf="Nome.hasError('minlength') && Nome.touched" class="form-control-feedback">
+        O nome deve ser completo!
+      </div>
+
+    </div>
+
+
+    <div class="form-group" [class.has-danger]="Email.invalid && Email.touched">
+      <label class="form-control-label" name="email" >E-mail</label>
+      <input type="email" class="form-control" name="email" required email #Email="ngModel" [(ngModel)]="cliente.email">
+
+      <div *ngIf="Email.hasError('required') && Email.touched" class="form-control-feedback">
+        Informe um Email válido!
+      </div>
+      <div *ngIf="Email.hasError('minlength') && Email.touched" class="form-control-feedback">
+        O nome deve ser completo!
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-control-label">Profissão</label>
+      <select class="form-control" name="profissao" required #Profissao="ngModel" [(ngModel)]="cliente.profissao">
+        <option value="" selected disabled>Selecione</option>
+        <option *ngFor="let profissao of profissoes"  [value]="profissao">{{profissao}}</option>
+      </select>
+
+      <div *ngIf="Profissao.hasError('required') && Profissao.touched" class="form-control-feedback">
+        Informe uma Profissão válido!
+      </div>
+    </div>
+
+    <div  *ngIf="usuarioForm.valid" title="Inserir!">
+      <button type="submit" class="btn btn-primary" [disabled]="usuarioForm.invalid">Salvar</button>
+    </div>
+  </form>
+
+</div>
+
+
+<!-- <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;"> -->
+<!-- Position it -->
+<!-- <div style="position: absolute; top: 0; right: 0;"> -->
+
+<!-- Then put toasts within -->
+<!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+<div class="toast-header">
+<img src="..." class="rounded mr-2" alt="...">
+<strong class="mr-auto">Bootstrap</strong>
+<small class="text-muted">just now</small>
+<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="toast-body">
+See? Just like this.
+</div>
+</div>
+-->
+<!--
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+<div class="toast-header">
+<img src="..." class="rounded mr-2" alt="...">
+<strong class="mr-auto">Bootstrap</strong>
+<small class="text-muted">2 seconds ago</small>
+<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="toast-body">
+Heads up, toasts will stack automatically
+</div>
+</div>
+</div>
+</div> -->
