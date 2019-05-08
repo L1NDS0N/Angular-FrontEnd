@@ -25,5 +25,6 @@ export class AppComponent {
 
   salvar(form: NgForm){
 
+      form.reset({})
   }
 }
