@@ -1,0 +1,24 @@
+{
+  "cidades": [
+    {
+      "nome": "Uberlândia",
+      "cep": "010101",
+      "id": 1
+    },
+    {
+      "nome": "São Paulo",
+      "cep": "010203",
+      "id": 2
+    },
+    {
+      "nome": "Belo Horizonte",
+      "cep": "020301",
+      "id": 3
+    },
+    {
+      "nome": "sao paulo",
+      "cep": "01001000",
+      "id": 5
+    }
+  ]
+}
